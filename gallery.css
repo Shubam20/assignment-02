@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#gallery {
+    max-width: 1800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+figure {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+li img {
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+li img:hover {
+    border-color: #3498db;
+}
+
+#thumbnail-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#thumbnail-list li img {
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+#thumbnail-list li img.active {
+    border-color: #3498db;
+    filter: grayscale(0%); /* Full color for the active thumbnail */
+}
+
+#thumbnail-list li img:hover:not(.active) {
+    filter: grayscale(100%); /* Grayscale for inactive thumbnails on hover */
+}
+
+/* ... Existing CSS rules ... */
+
+#gallery {
+    max-width: 1350px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+#thumbnails-container {
+    flex: 0 0 20%; /* Adjust the width as needed */
+    margin-right: 20px;
+}
+
+#thumbnail-list {
+    list-style: none;
+    padding: 0;
+}
+
+#thumbnail-list li {
+    margin-bottom: 10px;
+}
+
+#thumbnail-list img {
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+#thumbnail-list img.active {
+    border-color: #3498db;
+    filter: grayscale(0%); /* Full color for the active thumbnail */
+}
+
+#thumbnail-list img:hover:not(.active) {
+    filter: grayscale(100%); /* Grayscale for inactive thumbnails on hover */
+}
+
+/* ... Existing CSS rules ... */
